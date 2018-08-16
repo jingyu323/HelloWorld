@@ -20,5 +20,11 @@ from . import view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^$', view.hello),
+    url('hello$', view.hello,name='home2'),
+    url('helloView$', view.helloView),
+    url('getName$', view.getName),
+
+
+    # url(r'^hello$', view.hello),
+
 ]
